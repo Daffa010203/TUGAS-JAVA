@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+      }
+
+      .kartu {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 20px 20px;
+        border-radius: 20px;
+      }
+
+      .kartu .gambar img {
+        width: 400px;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+      }
+
+      .kartu .teks h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .kartu .teks,
+      .kartu .btn {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .kartu .teks button,
+      .kartu .btn button {
+        margin: 10px 5px 10px 5px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #e7ab22;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kartu">
+        <div class="gambar">
+          <img src="Ducati.jpg" alt="" />
+        </div>
+        <div class="teks">
+          <h1>Apa nama motor diatas?</h1>
+          <button onclick="Prompt()">Klik untuk mengisi</button>
+        </div>
+        <div class="btn">
+          <button onclick="Konfirmasi()">Konfirmasi kehadiran</button>
+          <button onclick="Alert()">Silahkan klik OK.</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function Alert() {
+        alert("Silahkan Klik OK.");
+      }
+
+      function Kehadiran() {
+        confirm("Seilahkan konfirmasi kehadiran");
+      }
+
+      function Prompt() {
+        prompt("Silahkan isi nama motor tersebut!");
+      }
+    </script>
+  </body>
+</html>
